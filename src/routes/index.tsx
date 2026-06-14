@@ -1,13 +1,13 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { Phone, MapPin, Clock, MessageCircle, Scissors, Sparkles, Shield, ChevronRight, Star } from "lucide-react";
+import { Phone, MapPin, Clock, MessageCircle, Scissors, Sparkles, Shield, ChevronRight, Star, Users, Crown } from "lucide-react";
 
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "HairFix Studios Pune - Premium Hair Patch Services" },
-      { name: "description", content: "HairFix Studios Pune offers premium hair patch services including consultations, first-time patching, and ongoing maintenance. Natural-looking hair solutions in Pune." },
-      { property: "og:title", content: "HairFix Studios Pune - Premium Hair Patch Services" },
-      { property: "og:description", content: "Expert hair patch consultation, first-time application, and maintenance services in Pune. Get your natural look back." },
+      { title: "HairFix Studios Pune - Men's Hair Patch Services" },
+      { name: "description", content: "Pune's leading men's hair patch studio. Expert consultation, first-time hair patch fitting, and ongoing maintenance for male hair loss. Natural, undetectable results." },
+      { property: "og:title", content: "HairFix Studios Pune - Men's Hair Patch Services" },
+      { property: "og:description", content: "Pune's leading men's hair patch studio. Expert consultation, first-time hair patch fitting, and ongoing maintenance for male hair loss. Natural, undetectable results." },
     ],
   }),
   component: Index,
@@ -20,7 +20,7 @@ function Index() {
       <nav className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/80 backdrop-blur-md">
         <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 sm:px-6 lg:px-8">
           <div className="flex items-center gap-2">
-            <Scissors className="h-6 w-6 text-primary" />
+            <Crown className="h-6 w-6 text-primary" />
             <span className="text-xl font-bold tracking-tight text-foreground">HairFix Studios</span>
           </div>
           <div className="hidden items-center gap-8 md:flex">
@@ -54,23 +54,23 @@ function Index() {
         <div className="relative mx-auto max-w-7xl px-4 py-24 sm:px-6 sm:py-32 lg:px-8 lg:py-40">
           <div className="max-w-2xl">
             <div className="inline-flex items-center gap-2 rounded-full bg-accent/20 px-3 py-1 text-sm font-medium text-accent-foreground ring-1 ring-accent/30">
-              <Sparkles className="h-4 w-4" />
-              Pune's Trusted Hair Patch Experts
+              <Users className="h-4 w-4" />
+              Pune's #1 Men's Hair Patch Studio
             </div>
             <h1 className="mt-6 text-4xl font-bold tracking-tight text-foreground sm:text-5xl lg:text-6xl">
-              Get Your Natural Look Back with{" "}
+              Men's Hair Patch Solutions Built for{" "}
               <span className="text-primary">Confidence</span>
             </h1>
             <p className="mt-6 text-lg leading-8 text-muted-foreground">
-              HairFix Studios Pune specializes in premium, natural-looking hair patch solutions. 
-              From your first consultation to ongoing maintenance, we deliver results that feel and look like your own hair.
+              HairFix Studios Pune specializes in natural-looking hair patches for men. 
+              Whether it's male pattern baldness, thinning, or patchy hair — from your first consultation to regular upkeep, we help you look and feel your best.
             </p>
             <div className="mt-10 flex flex-wrap gap-4">
               <a
                 href="#consultation"
                 className="inline-flex items-center gap-2 rounded-full bg-primary px-6 py-3 text-base font-medium text-primary-foreground shadow-lg shadow-primary/20 transition-all hover:bg-primary/90 hover:shadow-xl hover:shadow-primary/30"
               >
-                Book Free Consultation
+                Book Free Men's Consultation
                 <ChevronRight className="h-4 w-4" />
               </a>
               <a
@@ -83,12 +83,12 @@ function Index() {
             <div className="mt-10 flex items-center gap-6 text-sm text-muted-foreground">
               <div className="flex items-center gap-1.5">
                 <Star className="h-4 w-4 fill-amber-400 text-amber-400" />
-                <span className="font-medium text-foreground">500+</span> Happy Clients
+                <span className="font-medium text-foreground">500+</span> Men Transformed
               </div>
               <div className="h-4 w-px bg-border" />
               <div className="flex items-center gap-1.5">
                 <Shield className="h-4 w-4 text-emerald-500" />
-                8+ Years Experience
+                8+ Years Men's Hair Expertise
               </div>
               <div className="h-4 w-px bg-border" />
               <div className="flex items-center gap-1.5">
@@ -103,9 +103,9 @@ function Index() {
       {/* Services Overview */}
       <section id="services" className="mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8">
         <div className="text-center">
-          <h2 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl">Our Services</h2>
+          <h2 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl">Men's Hair Patch Services</h2>
           <p className="mx-auto mt-4 max-w-2xl text-muted-foreground">
-            Complete hair patch solutions tailored to your needs. We guide you through every step with care and expertise.
+            Complete hair patch solutions designed specifically for men. We understand male hair loss and craft results that look completely natural.
           </p>
         </div>
         <div className="mt-16 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
@@ -140,7 +140,7 @@ function Index() {
               <div className="overflow-hidden rounded-2xl shadow-xl">
                 <img
                   src="/images/consultation.jpg"
-                  alt="Hair patch consultation with specialist"
+                  alt="Men's hair patch consultation with specialist"
                   className="h-full w-full object-cover"
                   loading="lazy"
                   width={1024}
@@ -151,14 +151,15 @@ function Index() {
             <div className="order-1 lg:order-2">
               <div className="inline-flex items-center gap-2 rounded-full bg-primary/10 px-3 py-1 text-sm font-medium text-primary">
                 <MessageCircle className="h-4 w-4" />
-                Step 1: Consultation
+                Step 1: Men's Consultation
               </div>
               <h2 className="mt-4 text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
-                Free, Confidential Consultation
+                Free, Private Consultation for Men
               </h2>
               <p className="mt-6 text-lg text-muted-foreground">
-                Every journey starts with understanding. Our specialists take the time to assess your hair condition, 
-                discuss your lifestyle, and recommend the best hair patch solution for you — all in a private, comfortable setting.
+                Every man's hair loss pattern is different. Our specialists understand male pattern baldness, 
+                receding hairlines, and thinning crowns. We assess your scalp, discuss your lifestyle, and 
+                recommend the best men's hair patch solution — all in a private, comfortable setting with complete discretion.
               </p>
               <div className="mt-8 space-y-4">
                 {consultationSteps.map((step, index) => (
@@ -184,14 +185,15 @@ function Index() {
           <div>
             <div className="inline-flex items-center gap-2 rounded-full bg-accent/20 px-3 py-1 text-sm font-medium text-accent-foreground">
               <Sparkles className="h-4 w-4" />
-              Step 2: First-Time Patching
+              Step 2: First-Time Men's Patching
             </div>
             <h2 className="mt-4 text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
-              First-Time Hair Patch Service
+              First Men's Hair Patch — Your New Look Begins Here
             </h2>
             <p className="mt-6 text-lg text-muted-foreground">
-              Your first hair patch is a transformative experience. We use only premium, breathable materials 
-              matched to your natural hair color, texture, and density for a seamless, undetectable result.
+              Your first hair patch is a game-changer. We use premium, breathable materials 
+              matched to your natural hair color, texture, and density — styled for a masculine, 
+              undetectable result that fits your face shape and personal style.
             </p>
             <div className="mt-8 grid gap-6 sm:grid-cols-2">
               {patchingFeatures.map((feature) => (
@@ -210,7 +212,7 @@ function Index() {
           <div className="overflow-hidden rounded-2xl shadow-xl">
             <img
               src="/images/patching-service.jpg"
-              alt="Hair patch application process"
+              alt="Men's hair patch application process"
               className="h-full w-full object-cover"
               loading="lazy"
               width={1024}
@@ -228,7 +230,7 @@ function Index() {
               <div className="overflow-hidden rounded-2xl shadow-xl">
                 <img
                   src="/images/maintenance.jpg"
-                  alt="Hair patch maintenance service"
+                  alt="Men's hair patch maintenance service"
                   className="h-full w-full object-cover"
                   loading="lazy"
                   width={1024}
@@ -239,14 +241,15 @@ function Index() {
             <div className="order-1 lg:order-2">
               <div className="inline-flex items-center gap-2 rounded-full bg-primary/10 px-3 py-1 text-sm font-medium text-primary">
                 <Shield className="h-4 w-4" />
-                Step 3: Ongoing Maintenance
+                Step 3: Men's Patch Maintenance
               </div>
               <h2 className="mt-4 text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
-                Maintenance of Existing Hair Patch
+                Maintenance of Your Hair Patch
               </h2>
               <p className="mt-6 text-lg text-muted-foreground">
-                Keep your hair patch looking fresh and natural with our regular maintenance services. 
-                We handle cleaning, reattachment, styling, and adjustments so you always look your best.
+                Keep your men's hair patch looking sharp with our regular maintenance. 
+                We handle cleaning, reattachment, styling, and adjustments — so your hair always looks 
+                fresh, natural, and ready for work, gym, or a night out.
               </p>
               <div className="mt-8 space-y-4">
                 {maintenanceItems.map((item) => (
@@ -269,9 +272,9 @@ function Index() {
       {/* Why Choose Us */}
       <section className="mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8">
         <div className="text-center">
-          <h2 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl">Why Choose HairFix Studios Pune?</h2>
+          <h2 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl">Why Men Choose HairFix Studios Pune</h2>
           <p className="mx-auto mt-4 max-w-2xl text-muted-foreground">
-            We combine expertise, quality materials, and personalized care to deliver results you'll love.
+            We understand men's hair loss. Our expertise, quality materials, and discreet service deliver results you'll be proud of.
           </p>
         </div>
         <div className="mt-16 grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
@@ -296,10 +299,10 @@ function Index() {
         <div className="relative mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8">
           <div className="text-center">
             <h2 className="text-3xl font-bold tracking-tight text-primary-foreground sm:text-4xl">
-              Ready to Transform Your Look?
+              Ready to Get Your Look Back?
             </h2>
             <p className="mx-auto mt-4 max-w-2xl text-lg text-primary-foreground/80">
-              Book your free consultation today. Our specialists are ready to help you regain your confidence with a natural-looking hair patch.
+              Book your free men's consultation today. Walk out with confidence — our specialists are ready to help.
             </p>
             <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
               <a
@@ -342,7 +345,7 @@ function Index() {
         <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
           <div className="flex flex-col items-center justify-between gap-6 sm:flex-row">
             <div className="flex items-center gap-2">
-              <Scissors className="h-5 w-5 text-primary" />
+              <Crown className="h-5 w-5 text-primary" />
               <span className="text-lg font-bold text-foreground">HairFix Studios Pune</span>
             </div>
             <p className="text-sm text-muted-foreground">
@@ -361,36 +364,36 @@ function Index() {
 
 const services = [
   {
-    title: "Free Consultation",
-    description: "A private, no-obligation session to assess your needs and explain the best options for you.",
+    title: "Free Men's Consultation",
+    description: "A private, no-obligation session to assess male hair loss patterns and explain the best options for you.",
     icon: <MessageCircle className="h-6 w-6" />,
     features: [
-      "Scalp & hair assessment",
-      "Style & color matching",
+      "Male scalp & hairline assessment",
+      "Style & color matching for men",
       "Personalized recommendations",
-      "Pricing transparency",
+      "Transparent pricing",
     ],
   },
   {
-    title: "First-Time Patching",
-    description: "Premium hair patch application using the finest materials for a natural, undetectable look.",
+    title: "First-Time Men's Patching",
+    description: "Premium hair patch application using finest materials for a masculine, natural, undetectable look.",
     icon: <Sparkles className="h-6 w-6" />,
     features: [
-      "100% human hair or high-grade synthetic",
-      "Custom color & texture matching",
-      "Breathable, comfortable base",
-      "Natural hairline design",
+      "100% natural human hair for men",
+      "Custom color & masculine texture match",
+      "Breathable, sweat-resistant base",
+      "Invisible hairline for men",
     ],
   },
   {
-    title: "Patch Maintenance",
-    description: "Regular care services to keep your hair patch looking fresh, secure, and styled perfectly.",
+    title: "Men's Patch Maintenance",
+    description: "Regular care to keep your men's hair patch looking sharp, secure, and styled for your lifestyle.",
     icon: <Shield className="h-6 w-6" />,
     features: [
-      "Cleaning & conditioning",
+      "Deep cleaning & conditioning",
       "Reattachment & tightening",
-      "Styling & trimming",
-      "Damage repair",
+      "Men's styling & trimming",
+      "Damage & wear repair",
     ],
   },
 ];
@@ -398,41 +401,41 @@ const services = [
 const consultationSteps = [
   {
     title: "Book Your Appointment",
-    description: "Call or WhatsApp us to schedule a convenient time. Walk-ins are also welcome.",
+    description: "Call or WhatsApp us to schedule a convenient time. Walk-ins are also welcome for men.",
   },
   {
-    title: "Personal Assessment",
-    description: "Our specialist examines your scalp, existing hair, and discusses your goals and lifestyle.",
+    title: "Personal Male Hair Assessment",
+    description: "Our specialist examines your male pattern baldness, receding hairline, crown thinning, and lifestyle needs.",
   },
   {
-    title: "Custom Recommendations",
-    description: "We present tailored options — hair type, base material, style, and maintenance plan.",
+    title: "Custom Men's Recommendations",
+    description: "We present tailored options — hair type, base material, masculine style, and a maintenance plan that fits your routine.",
   },
   {
     title: "Transparent Pricing",
-    description: "Clear, upfront pricing with no hidden costs. You decide when you're ready to proceed.",
+    description: "Clear, upfront pricing with no hidden costs. You decide when you're ready to reclaim your look.",
   },
 ];
 
 const patchingFeatures = [
   {
-    title: "Premium Materials",
-    description: "Medical-grade, breathable bases with 100% natural human hair or top-tier synthetic options.",
+    title: "Premium Men's Materials",
+    description: "Medical-grade, breathable bases designed for active men. 100% natural human hair or top-tier synthetic options.",
     icon: <Shield className="h-5 w-5" />,
   },
   {
-    title: "Perfect Color Match",
-    description: "Expert blending with your natural hair color, texture, and density for seamless results.",
+    title: "Perfect Masculine Match",
+    description: "Expert blending with your natural hair color, texture, and density for seamless, undetectable results on men.",
     icon: <Sparkles className="h-5 w-5" />,
   },
   {
-    title: "Comfortable Fit",
-    description: "Custom-cut base ensures a secure, lightweight feel you can wear all day with confidence.",
-    icon: <Scissors className="h-5 w-5" />,
+    title: "Active Lifestyle Fit",
+    description: "Secure, lightweight hold that stays in place during gym, swimming, and daily activities. Sweat-resistant.",
+    icon: <Users className="h-5 w-5" />,
   },
   {
-    title: "Natural Hairline",
-    description: "Advanced techniques create an invisible front hairline that looks completely natural.",
+    title: "Natural Male Hairline",
+    description: "Advanced techniques create a masculine, invisible front hairline that looks completely real.",
     icon: <Star className="h-5 w-5" />,
   },
 ];
@@ -440,45 +443,46 @@ const patchingFeatures = [
 const maintenanceItems = [
   {
     title: "Deep Cleaning",
-    description: "Thorough washing and conditioning to remove oils, dirt, and restore the hair's natural shine.",
+    description: "Thorough washing and conditioning to remove oils, sweat, and restore the hair's natural masculine shine.",
     icon: <Sparkles className="h-5 w-5" />,
   },
   {
     title: "Reattachment Service",
-    description: "Secure reapplication with fresh adhesive or tape to ensure a firm, comfortable hold.",
+    description: "Secure reapplication with fresh adhesive or tape to ensure a firm, comfortable hold that lasts weeks.",
     icon: <Shield className="h-5 w-5" />,
   },
   {
-    title: "Trim & Style",
-    description: "Professional cutting and styling to match your preferred look or adapt to changing trends.",
+    title: "Men's Trim & Style",
+    description: "Professional cutting and styling to match your preferred masculine look — from corporate clean to modern textured.",
     icon: <Scissors className="h-5 w-5" />,
   },
   {
     title: "Repair & Refresh",
-    description: "Fix minor damage, replace worn adhesive strips, and refresh the overall appearance.",
+    description: "Fix minor damage, replace worn adhesive strips, and refresh the overall appearance for a like-new look.",
     icon: <Star className="h-5 w-5" />,
   },
 ];
 
 const whyChooseUs = [
   {
-    title: "8+ Years Experience",
-    description: "Trusted expertise in hair patch services since 2016, serving 500+ satisfied clients.",
-    icon: <Shield className="h-6 w-6" />,
+    title: "Men's Hair Experts",
+    description: "8+ years specializing in men's hair patches. 500+ men transformed with natural, confident results.",
+    icon: <Users className="h-6 w-6" />,
   },
   {
     title: "Premium Quality",
-    description: "Only the finest hair materials and medical-grade bases for comfort and durability.",
+    description: "Only the finest hair materials and medical-grade bases built for men's active lifestyles and comfort.",
     icon: <Star className="h-6 w-6" />,
   },
   {
-    title: "Private & Comfortable",
-    description: "Discreet studio with individual consultation rooms for your complete privacy and comfort.",
-    icon: <MessageCircle className="h-6 w-6" />,
+    title: "Discreet & Private",
+    description: "Private consultation rooms. No one needs to know — unless you tell them. Complete confidentiality.",
+    icon: <Shield className="h-6 w-6" />,
   },
   {
     title: "Affordable Packages",
-    description: "Flexible pricing and maintenance plans that fit your budget without compromising quality.",
+    description: "Flexible pricing and maintenance plans that fit your budget without compromising on quality or looks.",
     icon: <Sparkles className="h-6 w-6" />,
   },
 ];
+

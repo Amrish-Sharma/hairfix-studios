@@ -127,7 +127,7 @@ function SeoPageView() {
       <h1 className="mt-2 text-4xl font-bold tracking-tight text-foreground sm:text-5xl">{page.title}</h1>
       <p className="mt-4 text-lg text-muted-foreground">{page.intro}</p>
       <ul className="mt-8 space-y-2">
-        {page.bullets.map((b) => (
+        {page.bullets.map((b: string) => (
           <li key={b} className="flex items-start gap-2 text-sm text-foreground">
             <CheckCircle2 className="mt-0.5 h-4 w-4 text-primary" /> {b}
           </li>

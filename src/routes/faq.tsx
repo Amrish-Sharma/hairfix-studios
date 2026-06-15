@@ -1,5 +1,14 @@
 import { createFileRoute } from "@tanstack/react-router";
 
+const faqs = [
+  { q: "How long does a hair patch last?", a: "Typically 6–18 months depending on hair quality, daily care and regular maintenance." },
+  { q: "Can I swim and exercise with a hair patch?", a: "Yes. With proper fixing and care, you can swim, work out and live a fully active lifestyle." },
+  { q: "Is the process painful?", a: "No. The entire process is non-surgical, painless and uses skin-safe adhesives." },
+  { q: "How often is servicing required?", a: "Generally every 15–30 days, depending on your scalp type and the bonding method used." },
+  { q: "Will it look natural?", a: "Yes. Our customised hair systems are designed to match your hair colour, density and style — most people cannot tell." },
+  { q: "Do you service hair patches that were fitted elsewhere?", a: "Yes, we service and rebond hair patches purchased from other studios as well." },
+];
+
 export const Route = createFileRoute("/faq")({
   head: () => ({
     meta: [
@@ -25,15 +34,6 @@ export const Route = createFileRoute("/faq")({
   }),
   component: FaqPage,
 });
-
-const faqs = [
-  { q: "How long does a hair patch last?", a: "Typically 6–18 months depending on hair quality, daily care and regular maintenance." },
-  { q: "Can I swim and exercise with a hair patch?", a: "Yes. With proper fixing and care, you can swim, work out and live a fully active lifestyle." },
-  { q: "Is the process painful?", a: "No. The entire process is non-surgical, painless and uses skin-safe adhesives." },
-  { q: "How often is servicing required?", a: "Generally every 15–30 days, depending on your scalp type and the bonding method used." },
-  { q: "Will it look natural?", a: "Yes. Our customised hair systems are designed to match your hair colour, density and style — most people cannot tell." },
-  { q: "Do you service hair patches that were fitted elsewhere?", a: "Yes, we service and rebond hair patches purchased from other studios as well." },
-];
 
 function FaqPage() {
   return (

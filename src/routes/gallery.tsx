@@ -10,6 +10,15 @@ import patch1 from "@/assets/gallery/patch-product-1.jpg.asset.json";
 import patch2 from "@/assets/gallery/patch-product-2.jpg.asset.json";
 import patch3 from "@/assets/gallery/patch-product-3.jpg.asset.json";
 import studioTour from "@/assets/gallery/studio-tour.mp4.asset.json";
+import videoPatchFitting from "@/assets/gallery/video-patch-fitting.mp4.asset.json";
+import videoOpening from "@/assets/gallery/video-opening.mp4.asset.json";
+import videoStudio1 from "@/assets/gallery/video-studio-1.mp4.asset.json";
+import videoStudio2 from "@/assets/gallery/video-studio-2.mp4.asset.json";
+import videoStudio3 from "@/assets/gallery/video-studio-3.mp4.asset.json";
+import videoStudio4 from "@/assets/gallery/video-studio-4.mp4.asset.json";
+import videoStudio5 from "@/assets/gallery/video-studio-5.mp4.asset.json";
+import videoStudio6 from "@/assets/gallery/video-studio-6.mp4.asset.json";
+import videoStudio7 from "@/assets/gallery/video-studio-7.mp4.asset.json";
 
 export const Route = createFileRoute("/gallery")({
   head: () => ({
@@ -42,6 +51,18 @@ const patchItems = [
   { src: patch1.url, title: "Premium Human Hair Patch", desc: "VIP-grade human hair patch with poly skin base." },
   { src: patch2.url, title: "Poly Skin Base Patch", desc: "Ultra-thin poly base for an invisible, natural finish." },
   { src: patch3.url, title: "Lace Base Patch", desc: "Breathable Swiss lace base for a barely-there feel." },
+];
+
+const videoItems = [
+  { src: videoPatchFitting.url, title: "Hair Patch Fitting" },
+  { src: videoOpening.url, title: "Studio Opening Day" },
+  { src: videoStudio1.url, title: "Inside the Studio" },
+  { src: videoStudio2.url, title: "Studio Tour" },
+  { src: videoStudio3.url, title: "Client Experience" },
+  { src: videoStudio4.url, title: "At the Studio" },
+  { src: videoStudio5.url, title: "Studio Moments" },
+  { src: videoStudio6.url, title: "Behind the Scenes" },
+  { src: videoStudio7.url, title: "Grand Opening" },
 ];
 
 function GalleryPage() {
@@ -78,6 +99,27 @@ function GalleryPage() {
       </section>
 
       <Section title="Our Hair Patches" subtitle="Premium human-hair patches with poly skin and lace bases." items={patchItems} />
+
+      <section className="mt-16">
+        <h2 className="text-2xl font-bold tracking-tight text-foreground sm:text-3xl">Video Highlights</h2>
+        <p className="mt-2 text-muted-foreground">Studio tours, fittings and moments from HairFix Pune.</p>
+        <div className="mt-6 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          {videoItems.map((v) => (
+            <figure key={v.title} className="overflow-hidden rounded-2xl border border-border bg-card">
+              <video
+                src={v.src}
+                controls
+                playsInline
+                preload="metadata"
+                className="aspect-video w-full bg-black object-cover"
+              />
+              <figcaption className="p-4">
+                <h3 className="text-sm font-semibold text-foreground">{v.title}</h3>
+              </figcaption>
+            </figure>
+          ))}
+        </div>
+      </section>
 
       <p className="mt-8 text-xs text-muted-foreground">* Actual client results may vary.</p>
 

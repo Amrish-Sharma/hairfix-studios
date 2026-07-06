@@ -46,9 +46,9 @@ const services = [
 ];
 
 const testimonials = [
-  { text: "Very natural-looking hair patch. Excellent service and professional staff.", name: "Rohit S." },
-  { text: "My confidence is back. Nobody can tell I'm wearing a hair system.", name: "Amit P." },
-  { text: "Affordable pricing and great after-service support.", name: "Suresh K." },
+  { text: "The hair patch looks completely natural, feels comfortable, and blends perfectly with my own hair. Highly recommended for anyone looking for a natural, hassle-free hair solution!", name: "Akshay Goel" },
+  { text: "HairFix gave me a better solution than a transplant — a hair patch that is easy to maintain and has no side-effects.", name: "Adwait Padalkar" },
+  { text: "Great ambience, luxurious environment and efficient work with a great transformation result.", name: "Satvik Yadav" },
 ];
 
 function HomePage() {

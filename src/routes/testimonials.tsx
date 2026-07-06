@@ -16,12 +16,15 @@ export const Route = createFileRoute("/testimonials")({
 });
 
 const reviews = [
-  { text: "Very natural-looking hair patch. Excellent service and professional staff.", name: "Rohit S.", city: "Pune" },
-  { text: "My confidence is back. Nobody can tell I'm wearing a hair system.", name: "Amit P.", city: "Pimple Saudagar" },
-  { text: "Affordable pricing and great after-service support. Highly recommend.", name: "Suresh K.", city: "Wakad" },
-  { text: "From consultation to fitting, the whole experience was private and comfortable.", name: "Vikram M.", city: "Aundh" },
-  { text: "The custom wig matched my hair colour perfectly. Worth every rupee.", name: "Neha R.", city: "Baner" },
-  { text: "Servicing is quick and the team is very honest about what's needed.", name: "Sandeep T.", city: "Hinjewadi" },
+  { text: "Had an excellent experience with the hair patch service. The staff is professional, patient, and very knowledgeable. The hair patch looks completely natural, feels comfortable, and blends perfectly with my own hair. Highly recommended for anyone looking for a natural, hassle-free hair solution!", name: "Akshay Goel", city: "Google Review" },
+  { text: "I was facing issues with baldness and did not want to spend much money on a hair transplant, plus was afraid of its side-effects. I came across HairFix who gave me a better solution — installing a hair patch that is easy to maintain and has no side-effects.", name: "Adwait Padalkar", city: "Google Review" },
+  { text: "Very great service with the expertise of Irshad. Great ambience, luxurious environment and efficient work with a great transformation result.", name: "Satvik Yadav", city: "Google Review" },
+  { text: "The hair studio looks great. Professional setup and technician.", name: "Bidit Roy", city: "Local Guide · Google Review" },
+  { text: "Happy with the service! Reasonably priced and humble staff.", name: "Pradeep Yadav", city: "Google Review" },
+  { text: "Very satisfied with the service. Would highly recommend visiting and getting serviced here.", name: "Sandeep Chawla", city: "Google Review" },
+  { text: "Nice place to get the hair done. Very good response and the staff is very cooperative.", name: "Aniket Deshmukh", city: "Google Review" },
+  { text: "Best products and best service in the town.", name: "Bhushan Ghate", city: "Google Review" },
+  { text: "Perfect place. Highly recommended for anyone looking for good-quality wigs.", name: "Pratik Kudale", city: "Google Review" },
 ];
 
 function TestimonialsPage() {

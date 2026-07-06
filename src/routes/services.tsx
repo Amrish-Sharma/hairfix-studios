@@ -16,14 +16,13 @@ export const Route = createFileRoute("/services")({
 });
 
 const services = [
-  { icon: Scissors, name: "Hair Fixing", desc: "Permanent-looking hair replacement without surgery, customised to your face shape and hairline." },
+  { icon: Scissors, name: "Hair Patch Servicing", desc: "Cleaning, rebonding, styling, maintenance and refitting for your existing patch." },
   { icon: Link2, name: "Hair Bonding", desc: "Advanced bonding technique that creates a seamless, natural appearance with long wear time." },
   { icon: Layers, name: "Hair Weaving", desc: "Integration of a hair system with your existing hair for added density and volume." },
   { icon: Tag, name: "Hair Clipping", desc: "Quick, removable hair patch solutions ideal for clients who want flexibility." },
   { icon: Plus, name: "Hair Extensions", desc: "Increase volume and length naturally — perfect for thinning hair or special occasions." },
   { icon: Sparkles, name: "Hair Taping", desc: "Lightweight, comfortable attachment method that is easy to maintain." },
   { icon: Crown, name: "Custom Hair Wigs", desc: "Tailor-made wigs designed to match your hair colour, density, and style." },
-  { icon: Wrench, name: "Hair Patch Servicing", desc: "Cleaning, rebonding, styling, maintenance and refitting for your existing patch." },
 ];
 
 const seoLinks = [

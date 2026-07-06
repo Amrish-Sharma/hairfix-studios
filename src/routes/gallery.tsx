@@ -5,7 +5,6 @@ import clientBefore from "@/assets/gallery/client-before.jpg.asset.json";
 import clientAfter from "@/assets/gallery/client-after.jpg.asset.json";
 import transformations from "@/assets/gallery/transformations.jpg.asset.json";
 import staffWithPatch from "@/assets/gallery/staff-with-patch.jpg.asset.json";
-import patch1 from "@/assets/gallery/patch-product-1.jpg.asset.json";
 import patch2 from "@/assets/gallery/patch-product-2.jpg.asset.json";
 import patch3 from "@/assets/gallery/patch-product-3.jpg.asset.json";
 import studioTour from "@/assets/gallery/studio-tour.mp4.asset.json";
@@ -46,9 +45,8 @@ const studioItems = [
 ];
 
 const patchItems = [
-  { src: patch1.url, title: "Premium Human Hair Patch", desc: "VIP-grade human hair patch with poly skin base." },
-  { src: patch2.url, title: "Poly Skin Base Patch", desc: "Ultra-thin poly base for an invisible, natural finish." },
-  { src: patch3.url, title: "Lace Base Patch", desc: "Breathable Swiss lace base for a barely-there feel." },
+  { src: patch2.url, title: "Australia Mirage Patch", desc: "Ultra-thin poly base for an invisible, natural finish." },
+  { src: patch3.url, title: "Full Lace Patch", desc: "Breathable Swiss lace base for a barely-there feel." },
 ];
 
 const videoItems = [

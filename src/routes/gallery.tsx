@@ -1,7 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 
 import studioEntrance from "@/assets/gallery/studio-entrance.jpg.asset.json";
-import studioOwner from "@/assets/gallery/studio-owner.jpg.asset.json";
 import clientBefore from "@/assets/gallery/client-before.jpg.asset.json";
 import clientAfter from "@/assets/gallery/client-after.jpg.asset.json";
 import transformations from "@/assets/gallery/transformations.jpg.asset.json";
@@ -43,7 +42,6 @@ const transformationItems = [
 
 const studioItems = [
   { src: studioEntrance.url, title: "Studio Entrance", desc: "Our HairFix Studio in Pimple Nilakh, Pune – grand opening day." },
-  { src: studioOwner.url, title: "Founder at the Studio", desc: "Welcoming clients at the HairFix Studio entrance." },
   { src: staffWithPatch.url, title: "Our Team", desc: "HairFix specialist showcasing a premium human-hair patch." },
 ];
 

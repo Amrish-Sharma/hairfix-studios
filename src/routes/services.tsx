@@ -1,5 +1,5 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { Scissors, Sparkles, Layers, Link2, Plus, Tag, Crown, Wrench } from "lucide-react";
+import { Scissors, Layers, Link2, Plus, Tag, Crown } from "lucide-react";
 
 export const Route = createFileRoute("/services")({
   head: () => ({
@@ -16,12 +16,11 @@ export const Route = createFileRoute("/services")({
 });
 
 const services = [
-  { icon: Scissors, name: "Hair Patch Servicing", desc: "Cleaning, rebonding, styling, maintenance and refitting for your existing patch." },
+  { icon: Scissors, name: "Hair Patch Servicing", desc: "Cleaning, taping, styling, maintenance and refitting for your existing patch." },
   { icon: Link2, name: "Hair Bonding", desc: "Advanced bonding technique that creates a seamless, natural appearance with long wear time." },
   { icon: Layers, name: "Hair Weaving", desc: "Integration of a hair system with your existing hair for added density and volume." },
   { icon: Tag, name: "Hair Clipping", desc: "Quick, removable hair patch solutions ideal for clients who want flexibility." },
   { icon: Plus, name: "Hair Extensions", desc: "Increase volume and length naturally — perfect for thinning hair or special occasions." },
-  { icon: Sparkles, name: "Hair Taping", desc: "Lightweight, comfortable attachment method that is easy to maintain." },
   { icon: Crown, name: "Custom Hair Wigs", desc: "Tailor-made wigs designed to match your hair colour, density, and style." },
 ];
 
@@ -61,7 +60,7 @@ function ServicesPage() {
       <section className="mt-16 rounded-3xl border border-border bg-card p-8">
         <h2 className="text-2xl font-bold text-foreground">Hair Patch Servicing Includes</h2>
         <ul className="mt-4 grid gap-3 text-sm text-muted-foreground sm:grid-cols-2 lg:grid-cols-5">
-          {["Cleaning", "Rebonding", "Styling", "Maintenance", "Refitting"].map((s) => (
+          {["Cleaning", "Taping", "Styling", "Maintenance", "Refitting"].map((s) => (
             <li key={s} className="rounded-xl bg-secondary/50 px-4 py-3 text-center font-medium text-foreground">
               {s}
             </li>

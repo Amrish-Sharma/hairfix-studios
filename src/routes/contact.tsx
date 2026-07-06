@@ -102,7 +102,7 @@ function ContactPage() {
               <li className="flex items-center gap-3"><Phone className="h-4 w-4 text-primary" /><a href={`tel:${SITE_CONTACT.PHONE}`} className="hover:text-foreground">{SITE_CONTACT.PHONE_DISPLAY}</a></li>
               <li className="flex items-center gap-3"><MessageCircle className="h-4 w-4 text-primary" /><a href={`https://wa.me/${SITE_CONTACT.WHATSAPP}`} target="_blank" rel="noopener noreferrer" className="hover:text-foreground">WhatsApp Chat</a></li>
               <li className="flex items-center gap-3"><Mail className="h-4 w-4 text-primary" /><a href={`mailto:${SITE_CONTACT.EMAIL}`} className="hover:text-foreground">{SITE_CONTACT.EMAIL}</a></li>
-              <li className="flex items-center gap-3"><Clock className="h-4 w-4 text-primary" />Mon–Sun · 10:00 AM – 8:00 PM</li>
+              <li className="flex items-center gap-3"><Clock className="h-4 w-4 text-primary" />Mon–Sun · 9:00 AM – 9:00 PM</li>
             </ul>
           </div>
           <div className="overflow-hidden rounded-2xl border border-border">

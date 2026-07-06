@@ -45,9 +45,8 @@ const studioItems = [
 ];
 
 const patchItems = [
-  { src: patch1.url, title: "Premium Human Hair Patch", desc: "VIP-grade human hair patch with poly skin base." },
-  { src: patch2.url, title: "Poly Skin Base Patch", desc: "Ultra-thin poly base for an invisible, natural finish." },
-  { src: patch3.url, title: "Lace Base Patch", desc: "Breathable Swiss lace base for a barely-there feel." },
+  { src: patch2.url, title: "Australia Mirage Patch", desc: "Ultra-thin poly base for an invisible, natural finish." },
+  { src: patch3.url, title: "Full Lace Patch", desc: "Breathable Swiss lace base for a barely-there feel." },
 ];
 
 const videoItems = [

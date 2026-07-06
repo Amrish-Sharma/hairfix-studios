@@ -1,10 +1,10 @@
 import { Link } from "@tanstack/react-router";
 import { Phone, MessageCircle, MapPin, Mail, Clock, Scissors } from "lucide-react";
 
-const PHONE = "+919876543210";
-const PHONE_DISPLAY = "+91 98765 43210";
-const WHATSAPP = "919876543210";
-const EMAIL = "hello@hairfix.in";
+const PHONE = "+919960688686";
+const PHONE_DISPLAY = "+91 99606 88686";
+const WHATSAPP = "919960688686";
+const EMAIL = "hairfixservice@gmail.com";
 const ADDRESS = "Near Jagtap Dairy Chowk, Pimple Nilakh, Pune";
 
 const navItems = [
@@ -126,7 +126,7 @@ export function SiteFooter() {
             </li>
             <li className="flex items-center gap-2">
               <Clock className="h-4 w-4 text-primary" />
-              <span>Mon–Sun · 10:00 AM – 8:00 PM</span>
+              <span>Mon–Sun · 9:00 AM – 9:00 PM</span>
             </li>
           </ul>
         </div>

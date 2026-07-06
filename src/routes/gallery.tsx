@@ -5,7 +5,6 @@ import clientBefore from "@/assets/gallery/client-before.jpg.asset.json";
 import clientAfter from "@/assets/gallery/client-after.jpg.asset.json";
 import transformations from "@/assets/gallery/transformations.jpg.asset.json";
 import staffWithPatch from "@/assets/gallery/staff-with-patch.jpg.asset.json";
-import patch1 from "@/assets/gallery/patch-product-1.jpg.asset.json";
 import patch2 from "@/assets/gallery/patch-product-2.jpg.asset.json";
 import patch3 from "@/assets/gallery/patch-product-3.jpg.asset.json";
 import studioTour from "@/assets/gallery/studio-tour.mp4.asset.json";

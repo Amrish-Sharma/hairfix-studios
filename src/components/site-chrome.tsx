@@ -1,5 +1,5 @@
 import { Link } from "@tanstack/react-router";
-import { Phone, MessageCircle, MapPin, Mail, Clock, Scissors } from "lucide-react";
+import { Phone, MessageCircle, MapPin, Mail, Clock } from "lucide-react";
 
 const PHONE = "+919960688686";
 const PHONE_DISPLAY = "+91 99606 88686";
@@ -18,13 +18,57 @@ const navItems = [
   { to: "/contact", label: "Contact" },
 ] as const;
 
+function BrandMark({ size = 28, onDark = false }: { size?: number; onDark?: boolean }) {
+  const stroke = onDark ? "#F7F4EE" : "#1B1B1B";
+  return (
+    <svg
+      width={size}
+      height={(size * 54) / 48}
+      viewBox="0 0 48 54"
+      fill="none"
+      aria-hidden="true"
+    >
+      <g strokeLinecap="round" fill="none" strokeWidth={2}>
+        <path d="M10 48 C10 30 11 16 20 8" stroke={stroke} />
+        <path d="M14 48 C14 30 15 16 24 8" stroke={stroke} />
+        <path d="M18 48 C18 30 19 16 28 8" stroke={stroke} />
+        <path d="M22 48 C22 30 23 16 32 8" stroke={stroke} />
+        <path d="M26 48 C26 30 27 16 36 8" stroke={stroke} />
+        <path d="M30 48 C30 30 31 16 40 8" stroke="#C28A42" strokeWidth={2.4} />
+      </g>
+    </svg>
+  );
+}
+
+function Wordmark({ onDark = false }: { onDark?: boolean }) {
+  return (
+    <span className="flex flex-col leading-none">
+      <span
+        className="font-serif text-xl font-semibold tracking-tight"
+        style={{ color: onDark ? "#F7F4EE" : undefined }}
+      >
+        HairFix
+      </span>
+      <span
+        className="mt-0.5 text-[9px] font-semibold uppercase"
+        style={{
+          letterSpacing: "0.42em",
+          color: onDark ? "rgba(247,244,238,0.7)" : "var(--muted-foreground)",
+        }}
+      >
+        Studios
+      </span>
+    </span>
+  );
+}
+
 export function SiteHeader() {
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/85 backdrop-blur-md">
       <div className="mx-auto flex max-w-7xl items-center justify-between gap-4 px-4 py-3 sm:px-6 lg:px-8">
-        <Link to="/" className="flex items-center gap-2">
-          <Scissors className="h-6 w-6 text-primary" />
-          <span className="text-lg font-bold tracking-tight text-foreground">HairFix</span>
+        <Link to="/" className="flex items-center gap-3">
+          <BrandMark size={28} />
+          <Wordmark />
         </Link>
         <nav className="hidden items-center gap-6 lg:flex">
           {navItems.map((item) => (
@@ -84,9 +128,9 @@ export function SiteFooter() {
     <footer className="border-t border-border/60 bg-secondary/40">
       <div className="mx-auto grid max-w-7xl gap-8 px-4 py-12 sm:px-6 lg:grid-cols-4 lg:px-8">
         <div className="lg:col-span-2">
-          <div className="flex items-center gap-2">
-            <Scissors className="h-6 w-6 text-primary" />
-            <span className="text-lg font-bold tracking-tight text-foreground">HairFix</span>
+          <div className="flex items-center gap-3">
+            <BrandMark size={30} />
+            <Wordmark />
           </div>
           <p className="mt-3 max-w-md text-sm text-muted-foreground">
             HairFix – Restore Your Hair, Rebuild Your Confidence. Premium non-surgical hair

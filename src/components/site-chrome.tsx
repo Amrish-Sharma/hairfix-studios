@@ -18,14 +18,21 @@ const navItems = [
   { to: "/contact", label: "Contact" },
 ] as const;
 
-export function BrandLogo({ className = "h-11 w-auto" }: { className?: string }) {
+export function BrandLogo({
+  className = "h-14 w-auto",
+  variant = "lockup",
+}: {
+  className?: string;
+  variant?: "lockup" | "header";
+}) {
+  const isHeader = variant === "header";
   return (
     <img
-      src="/brand/hairfix-logo-horizontal.svg"
+      src={isHeader ? "/brand/hairfix-logo-header.svg" : "/brand/hairfix-logo-lockup.svg"}
       alt="HairFix Studios — Your Journey to Confidence"
       className={className}
-      width={640}
-      height={210}
+      width={isHeader ? 518 : 617}
+      height={isHeader ? 116 : 133}
     />
   );
 }
@@ -35,7 +42,7 @@ export function SiteHeader() {
     <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/85 backdrop-blur-md">
       <div className="mx-auto flex max-w-7xl items-center justify-between gap-4 px-4 py-3 sm:px-6 lg:px-8">
         <Link to="/" className="flex items-center">
-          <BrandLogo className="h-10 w-auto sm:h-11" />
+          <BrandLogo variant="header" className="h-11 w-auto sm:h-14" />
         </Link>
         <nav className="hidden items-center gap-6 lg:flex">
           {navItems.map((item) => (
@@ -95,7 +102,7 @@ export function SiteFooter() {
     <footer className="border-t border-border/60 bg-secondary/40">
       <div className="mx-auto grid max-w-7xl gap-8 px-4 py-12 sm:px-6 lg:grid-cols-4 lg:px-8">
         <div className="lg:col-span-2">
-          <BrandLogo className="h-12 w-auto" />
+          <BrandLogo className="h-16 w-auto" />
           <p className="mt-3 max-w-md text-sm text-muted-foreground">
             HairFix – Restore Your Hair, Rebuild Your Confidence. Premium non-surgical hair
             replacement, wigs, and patch servicing in Pune.

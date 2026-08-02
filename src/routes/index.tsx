@@ -62,7 +62,7 @@ function HomePage() {
         </div>
         <div className="relative mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8 lg:py-28">
           <div className="max-w-2xl rounded-2xl bg-background/70 p-6 backdrop-blur-sm sm:p-8">
-            <span className="inline-flex items-center gap-2 rounded-full bg-accent/20 px-3 py-1 text-xs font-medium text-accent-foreground">
+            <span className="inline-flex items-center gap-2 rounded-full bg-accent px-3 py-1 text-xs font-medium text-accent-foreground">
               <Sparkles className="h-3.5 w-3.5" /> Pune's Trusted Hair Replacement Studio
             </span>
             <h1 className="mt-4 text-4xl font-bold tracking-tight text-foreground [text-shadow:0_1px_2px_rgba(247,244,238,0.8)] sm:text-5xl lg:text-6xl">

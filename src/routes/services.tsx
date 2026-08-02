@@ -25,13 +25,14 @@ const services = [
 ];
 
 const seoLinks = [
-  { to: "/seo/hair-patch-in-pune", label: "Hair Patch in Pune" },
-  { to: "/seo/wig-fixing-in-pune", label: "Wig Fixing in Pune" },
-  { to: "/seo/non-surgical-hair-replacement-in-pune", label: "Non-Surgical Hair Replacement in Pune" },
-  { to: "/seo/hair-bonding-in-pune", label: "Hair Bonding Services in Pune" },
-  { to: "/seo/custom-hair-wigs-in-pune", label: "Custom Hair Wigs in Pune" },
-  { to: "/seo/hair-patch-maintenance", label: "Hair Patch Maintenance & Servicing" },
+  { slug: "hair-patch-in-pune", label: "Hair Patch in Pune" },
+  { slug: "wig-fixing-in-pune", label: "Wig Fixing in Pune" },
+  { slug: "non-surgical-hair-replacement-in-pune", label: "Non-Surgical Hair Replacement in Pune" },
+  { slug: "hair-bonding-in-pune", label: "Hair Bonding Services in Pune" },
+  { slug: "custom-hair-wigs-in-pune", label: "Custom Hair Wigs in Pune" },
+  { slug: "hair-patch-maintenance", label: "Hair Patch Maintenance & Servicing" },
 ] as const;
+
 
 function ServicesPage() {
   return (

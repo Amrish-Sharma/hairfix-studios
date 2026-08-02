@@ -5,6 +5,7 @@ import clientBefore from "@/assets/gallery/client-before.jpg.asset.json";
 import clientAfter from "@/assets/gallery/client-after.jpg.asset.json";
 import transformations from "@/assets/gallery/transformations.jpg.asset.json";
 import staffWithPatch from "@/assets/gallery/staff-with-patch.jpg.asset.json";
+import teamHairfix from "@/assets/gallery/team-hairfix.jpg.asset.json";
 import patch2 from "@/assets/gallery/patch-product-2.jpg.asset.json";
 import patch3 from "@/assets/gallery/patch-product-3.jpg.asset.json";
 import studioTour from "@/assets/gallery/studio-tour.mp4.asset.json";
@@ -41,7 +42,8 @@ const transformationItems = [
 
 const studioItems = [
   { src: studioEntrance.url, title: "Studio Entrance", desc: "Our HairFix Studio in Pimple Nilakh, Pune – grand opening day." },
-  { src: staffWithPatch.url, title: "Our Team", desc: "HairFix specialist showcasing a premium human-hair patch." },
+  { src: teamHairfix.url, title: "Our Team", desc: "The HairFix specialists at our Pimple Nilakh studio." },
+  { src: staffWithPatch.url, title: "Premium Patch Showcase", desc: "HairFix specialist showcasing a premium human-hair patch." },
 ];
 
 const patchItems = [

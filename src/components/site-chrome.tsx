@@ -1,5 +1,7 @@
 import { Link } from "@tanstack/react-router";
-import { Phone, MessageCircle, MapPin, Mail, Clock } from "lucide-react";
+import { Phone, MessageCircle, MapPin, Mail, Clock, Menu, X } from "lucide-react";
+import { useState } from "react";
+import { cn } from "@/lib/utils";
 
 const PHONE = "+919960688686";
 const PHONE_DISPLAY = "+91 99606 88686";
@@ -38,26 +40,37 @@ export function BrandLogo({
 }
 
 export function SiteHeader() {
+  const [menuOpen, setMenuOpen] = useState(false);
+
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/85 backdrop-blur-md">
       <div className="mx-auto flex max-w-7xl items-center justify-between gap-4 px-4 py-3 sm:px-6 lg:px-8">
         <Link to="/" className="flex items-center">
           <BrandLogo variant="header" className="h-11 w-auto sm:h-14" />
         </Link>
-        <nav className="hidden items-center gap-6 lg:flex">
+
+        {/* Modern desktop nav: floating pill with active indicator */}
+        <nav className="hidden items-center gap-1 rounded-full border border-border/60 bg-card/50 p-1 backdrop-blur-sm lg:flex">
           {navItems.map((item) => (
             <Link
               key={item.to}
               to={item.to}
               activeOptions={{ exact: item.to === "/" }}
-              activeProps={{ className: "text-foreground" }}
-              inactiveProps={{ className: "text-muted-foreground" }}
-              className="text-sm font-medium transition-colors hover:text-foreground"
+              activeProps={{
+                className:
+                  "bg-primary text-primary-foreground shadow-sm",
+              }}
+              inactiveProps={{
+                className:
+                  "text-muted-foreground hover:text-foreground hover:bg-accent/10",
+              }}
+              className="relative rounded-full px-4 py-2 text-sm font-medium transition-all"
             >
               {item.label}
             </Link>
           ))}
         </nav>
+
         <div className="flex items-center gap-2">
           <a
             href={`https://wa.me/${WHATSAPP}`}
@@ -74,24 +87,64 @@ export function SiteHeader() {
             <Phone className="h-4 w-4" />
             <span className="hidden sm:inline">Call Us</span>
           </a>
+
+          {/* Mobile hamburger */}
+          <button
+            type="button"
+            onClick={() => setMenuOpen((open) => !open)}
+            aria-label={menuOpen ? "Close menu" : "Open menu"}
+            aria-expanded={menuOpen}
+            className="inline-flex items-center justify-center rounded-full border border-border bg-background p-2.5 text-foreground transition-colors hover:bg-accent/20 lg:hidden"
+          >
+            {menuOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
+          </button>
         </div>
       </div>
-      {/* Mobile nav */}
-      <div className="border-t border-border/40 lg:hidden">
-        <div className="mx-auto flex max-w-7xl gap-4 overflow-x-auto px-4 py-2 text-sm sm:px-6">
+
+      {/* Modern mobile menu: full-width slide-down panel */}
+      <div
+        className={cn(
+          "overflow-hidden border-b border-border/40 bg-background/95 backdrop-blur-md transition-all duration-300 ease-out lg:hidden",
+          menuOpen ? "max-h-[28rem] opacity-100" : "max-h-0 opacity-0"
+        )}
+      >
+        <nav className="mx-auto grid max-w-7xl gap-1 px-4 py-3 sm:px-6">
           {navItems.map((item) => (
             <Link
               key={item.to}
               to={item.to}
+              onClick={() => setMenuOpen(false)}
               activeOptions={{ exact: item.to === "/" }}
-              activeProps={{ className: "text-foreground font-semibold" }}
-              inactiveProps={{ className: "text-muted-foreground" }}
-              className="whitespace-nowrap transition-colors hover:text-foreground"
+              activeProps={{
+                className:
+                  "bg-primary/10 text-foreground border-l-4 border-primary",
+              }}
+              inactiveProps={{
+                className:
+                  "text-muted-foreground hover:text-foreground hover:bg-accent/10 border-l-4 border-transparent",
+              }}
+              className="rounded-r-lg px-4 py-3 text-sm font-medium transition-colors"
             >
               {item.label}
             </Link>
           ))}
-        </div>
+          <div className="mt-2 flex flex-col gap-2 border-t border-border/40 pt-3">
+            <a
+              href={`https://wa.me/${WHATSAPP}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 rounded-full border border-border bg-background px-4 py-2 text-sm font-medium text-foreground transition-colors hover:bg-accent/20"
+            >
+              <MessageCircle className="h-4 w-4" /> WhatsApp
+            </a>
+            <a
+              href={`tel:${PHONE}`}
+              className="inline-flex items-center justify-center gap-2 rounded-full bg-primary px-4 py-2 text-sm font-medium text-primary-foreground transition-colors hover:bg-primary/90"
+            >
+              <Phone className="h-4 w-4" /> {PHONE_DISPLAY}
+            </a>
+          </div>
+        </nav>
       </div>
     </header>
   );

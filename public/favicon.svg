@@ -1,10 +1,8 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640" width="640" height="640" font-family="Inter, Arial, sans-serif">
-<defs>
-<linearGradient id="ring" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#1B1B1B"/><stop offset="1" stop-color="#1F5E46"/></linearGradient>
-<path id="tag" d="M 34.0,320.0 A 286.0,286.0 0 0 0 606.0,320.0"/>
-</defs>
+<defs><linearGradient id="ring" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#1B3E9E"/><stop offset="1" stop-color="#35A8DF"/></linearGradient><path id="tag" d="M 34.0,320.0 A 286.0,286.0 0 0 0 606.0,320.0"/></defs>
 <circle cx="320.0" cy="320.0" r="284.0" fill="none" stroke="url(#ring)" stroke-width="44"/>
-<g transform="translate(202.568860895,92) scale(0.63)"><g transform="translate(-365.052049,991.645812) scale(0.100000,-0.100000)" fill="#1B1B1B"><path d="M5505 9911 c-187 -23 -390 -113 -546 -241 -23 -19 -47 -35 -53 -35
+<circle cx="320.0" cy="320.0" r="262" fill="#FFFFFF"/>
+<g transform="translate(202.568860895,92) scale(0.63)"><g transform="translate(-365.052049,991.645812) scale(0.100000,-0.100000)" fill="#141414"><path d="M5505 9911 c-187 -23 -390 -113 -546 -241 -23 -19 -47 -35 -53 -35
 -16 0 -8 92 16 163 11 35 17 66 14 69 -3 3 -37 -26 -75 -64 -54 -55 -73 -83
 -88 -129 -18 -52 -23 -59 -44 -57 -125 12 -253 14 -304 4 -58 -11 -193 -67
 -183 -76 2 -3 39 2 80 10 130 25 272 -16 156 -45 -267 -66 -518 -229 -656
@@ -28,6 +26,6 @@
 -35 11 38 -65 185 -202 435 -326 595 -184 236 -369 362 -600 408 -109 22 -117
 25 -92 35 16 6 72 11 125 11 97 1 97 1 45 34 -101 64 -389 172 -553 207 -104
 22 -350 33 -455 20z"/></g></g>
-<text x="320.0" y="404" text-anchor="middle" font-size="78" font-weight="800" letter-spacing="-1"><tspan fill="#1B1B1B">HAi</tspan><tspan fill="#1B1B1B">R</tspan><tspan fill="#1B1B1B">Fix</tspan></text>
-<text font-size="23" font-weight="600" letter-spacing="4.2" fill="#1B1B1B"><textPath href="#tag" startOffset="50%" text-anchor="middle">YOUR JOURNEY TO CONFIDENCE</textPath></text>
+<text x="320.0" y="404" text-anchor="middle" font-size="78" font-weight="800" letter-spacing="-1"><tspan fill="#1B3E9E">HAiR</tspan><tspan fill="#35A8DF">Fix</tspan></text>
+<text font-size="23" font-weight="600" letter-spacing="4.2" fill="#54648C"><textPath href="#tag" startOffset="50%" text-anchor="middle">YOUR JOURNEY TO CONFIDENCE</textPath></text>
 </svg>

@@ -104,7 +104,7 @@ export function SiteHeader() {
       {/* Modern mobile menu: full-width slide-down panel */}
       <div
         className={cn(
-          "overflow-hidden border-b border-border/40 bg-background/95 backdrop-blur-md transition-all duration-300 ease-out lg:hidden",
+          "overflow-hidden border-b border-border/40 bg-background/95 backdrop-blur-md transition-all duration-300 ease-out xl:hidden",
           menuOpen ? "max-h-[28rem] opacity-100" : "max-h-0 opacity-0"
         )}
       >

@@ -50,7 +50,7 @@ export function SiteHeader() {
         </Link>
 
         {/* Modern desktop nav: floating pill with active indicator */}
-        <nav className="hidden items-center gap-1 rounded-full border border-border/60 bg-card/50 p-1 backdrop-blur-sm lg:flex">
+        <nav className="hidden items-center gap-1 rounded-full border border-border/60 bg-card/50 p-1 backdrop-blur-sm xl:flex">
           {navItems.map((item) => (
             <Link
               key={item.to}

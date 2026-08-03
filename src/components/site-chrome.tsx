@@ -45,12 +45,12 @@ export function SiteHeader() {
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/85 backdrop-blur-md">
       <div className="mx-auto flex max-w-7xl items-center justify-between gap-4 px-4 py-3 sm:px-6 lg:px-8">
-        <Link to="/" className="flex items-center">
+        <Link to="/" className="flex min-w-0 items-center lg:shrink-0">
           <BrandLogo variant="header" className="h-11 w-auto sm:h-14" />
         </Link>
 
         {/* Modern desktop nav: floating pill with active indicator */}
-        <nav className="hidden items-center gap-1 rounded-full border border-border/60 bg-card/50 p-1 backdrop-blur-sm lg:flex">
+        <nav className="hidden items-center gap-1 rounded-full border border-border/60 bg-card/50 p-1 backdrop-blur-sm xl:flex">
           {navItems.map((item) => (
             <Link
               key={item.to}
@@ -88,13 +88,13 @@ export function SiteHeader() {
             <span className="hidden sm:inline">Call Us</span>
           </a>
 
-          {/* Mobile hamburger */}
+          {/* Mobile / tablet hamburger */}
           <button
             type="button"
             onClick={() => setMenuOpen((open) => !open)}
             aria-label={menuOpen ? "Close menu" : "Open menu"}
             aria-expanded={menuOpen}
-            className="inline-flex items-center justify-center rounded-full border border-border bg-background p-2.5 text-foreground transition-colors hover:bg-accent/20 lg:hidden"
+            className="inline-flex items-center justify-center rounded-full border border-border bg-background p-2.5 text-foreground transition-colors hover:bg-accent/20 xl:hidden"
           >
             {menuOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
           </button>
@@ -104,7 +104,7 @@ export function SiteHeader() {
       {/* Modern mobile menu: full-width slide-down panel */}
       <div
         className={cn(
-          "overflow-hidden border-b border-border/40 bg-background/95 backdrop-blur-md transition-all duration-300 ease-out lg:hidden",
+          "overflow-hidden border-b border-border/40 bg-background/95 backdrop-blur-md transition-all duration-300 ease-out xl:hidden",
           menuOpen ? "max-h-[28rem] opacity-100" : "max-h-0 opacity-0"
         )}
       >

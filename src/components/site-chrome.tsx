@@ -88,13 +88,13 @@ export function SiteHeader() {
             <span className="hidden sm:inline">Call Us</span>
           </a>
 
-          {/* Mobile hamburger */}
+          {/* Mobile / tablet hamburger */}
           <button
             type="button"
             onClick={() => setMenuOpen((open) => !open)}
             aria-label={menuOpen ? "Close menu" : "Open menu"}
             aria-expanded={menuOpen}
-            className="inline-flex items-center justify-center rounded-full border border-border bg-background p-2.5 text-foreground transition-colors hover:bg-accent/20 lg:hidden"
+            className="inline-flex items-center justify-center rounded-full border border-border bg-background p-2.5 text-foreground transition-colors hover:bg-accent/20 xl:hidden"
           >
             {menuOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
           </button>

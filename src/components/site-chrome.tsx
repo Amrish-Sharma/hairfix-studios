@@ -33,8 +33,8 @@ export function BrandLogo({
       src={isHeader ? "/brand/hairfix-logo-header.svg" : "/brand/hairfix-logo-lockup.svg"}
       alt="HairFix Studios — Your Journey to Confidence"
       className={className}
-      width={isHeader ? 518 : 617}
-      height={isHeader ? 116 : 133}
+      width={isHeader ? 640 : 617}
+      height={isHeader ? 140 : 133}
     />
   );
 }

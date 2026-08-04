@@ -7,7 +7,7 @@ const PHONE = "+919960688686";
 const PHONE_DISPLAY = "+91 99606 88686";
 const WHATSAPP = "919960688686";
 const EMAIL = "hairfixservice@gmail.com";
-const ADDRESS = "Near Jagtap Dairy Chowk, Pimple Nilakh, Pune";
+const ADDRESS = "Shop no 5, Savoarday society, opposite Copa Villa, near Jagtap Dairy Chowk, Madhuban Colony, Jagtap Dairy, Pimple Nilakh, Pimpri-Chinchwad, Maharashtra 411027";
 
 const navItems = [
   { to: "/", label: "Home" },

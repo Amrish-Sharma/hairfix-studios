@@ -88,8 +88,6 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { name: "twitter:site", content: "@HairFixStudiosPune" },
       { name: "twitter:title", content: "HairFix Studios Pune - Premium Hair Patch Services" },
       { name: "twitter:description", content: "HairFix Studios Pune offers premium hair patch services including consultations, first-time patching, and ongoing maintenance. Natural-looking hair solutions in Pune." },
-      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/9c4aa70a-f48a-46a4-8da2-989489ff881e/id-preview-69d402ee--22058b6e-e8a3-44b8-af0a-b4e053c0341a.lovable.app-1781530430960.png" },
-      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/9c4aa70a-f48a-46a4-8da2-989489ff881e/id-preview-69d402ee--22058b6e-e8a3-44b8-af0a-b4e053c0341a.lovable.app-1781530430960.png" },
     ],
     links: [
       {

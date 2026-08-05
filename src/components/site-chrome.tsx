@@ -162,7 +162,9 @@ export function SiteFooter() {
           </p>
           <div className="mt-4 flex items-start gap-2 text-sm text-muted-foreground">
             <MapPin className="mt-0.5 h-4 w-4 shrink-0 text-primary" />
-            <span>{ADDRESS}</span>
+            <a href="https://maps.app.goo.gl/6mVkbhkc9XyR3HUS6?g_st=ac" target="_blank" rel="noopener noreferrer" className="hover:text-foreground">
+              {ADDRESS}
+            </a>
           </div>
         </div>
         <div>

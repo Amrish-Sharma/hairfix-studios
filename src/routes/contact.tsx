@@ -98,7 +98,7 @@ function ContactPage() {
           <div className="rounded-2xl border border-border bg-card p-6">
             <h2 className="text-lg font-semibold text-foreground">HairFix Studio</h2>
             <ul className="mt-4 space-y-3 text-sm text-muted-foreground">
-              <li className="flex items-start gap-3"><MapPin className="mt-0.5 h-4 w-4 text-primary" />{SITE_CONTACT.ADDRESS}</li>
+              <li className="flex items-start gap-3"><MapPin className="mt-0.5 h-4 w-4 text-primary" /><a href="https://maps.app.goo.gl/6mVkbhkc9XyR3HUS6?g_st=ac" target="_blank" rel="noopener noreferrer" className="hover:text-foreground">{SITE_CONTACT.ADDRESS}</a></li>
               <li className="flex items-center gap-3"><Phone className="h-4 w-4 text-primary" /><a href={`tel:${SITE_CONTACT.PHONE}`} className="hover:text-foreground">{SITE_CONTACT.PHONE_DISPLAY}</a></li>
               <li className="flex items-center gap-3"><MessageCircle className="h-4 w-4 text-primary" /><a href={`https://wa.me/${SITE_CONTACT.WHATSAPP}`} target="_blank" rel="noopener noreferrer" className="hover:text-foreground">WhatsApp Chat</a></li>
               <li className="flex items-center gap-3"><Mail className="h-4 w-4 text-primary" /><a href={`mailto:${SITE_CONTACT.EMAIL}`} className="hover:text-foreground">{SITE_CONTACT.EMAIL}</a></li>

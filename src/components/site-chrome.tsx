@@ -174,7 +174,7 @@ export function SiteFooter() {
             <MapPin className="mt-0.5 h-4 w-4 shrink-0 text-primary" />
             <span>
               <span className="block font-medium text-foreground">Ravet (New Branch)</span>
-              <a href="https://www.google.com/maps/search/?api=1&query=One+Mall+Shop+no+104+Aundh+Ravet+BRTS+Rd+Ravet+PCMC+Pimpri+Chinchwad+Maharashtra+412101" target="_blank" rel="noopener noreferrer" className="hover:text-foreground">
+              <a href={RAVET_MAPS_URL} target="_blank" rel="noopener noreferrer" className="hover:text-foreground">
                 {RAVET_ADDRESS}
               </a>
             </span>

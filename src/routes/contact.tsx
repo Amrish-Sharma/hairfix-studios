@@ -3,6 +3,7 @@ import { useState } from "react";
 import { z } from "zod";
 import { Phone, MessageCircle, Mail, MapPin, Clock } from "lucide-react";
 import { SITE_CONTACT } from "../components/site-chrome";
+import { RAVET_ADDRESS, RAVET_MAPS_URL } from "../components/splash-intro";
 
 export const Route = createFileRoute("/contact")({
   head: () => ({
@@ -96,11 +97,22 @@ function ContactPage() {
 
         <aside className="space-y-4 lg:col-span-2">
           <div className="rounded-2xl border border-border bg-card p-6">
-            <h2 className="text-lg font-semibold text-foreground">HairFix Studio</h2>
-            <ul className="mt-4 space-y-3 text-sm text-muted-foreground">
-              <li className="flex items-start gap-3"><MapPin className="mt-0.5 h-4 w-4 text-primary" /><a href="https://maps.app.goo.gl/6mVkbhkc9XyR3HUS6?g_st=ac" target="_blank" rel="noopener noreferrer" className="hover:text-foreground">{SITE_CONTACT.ADDRESS}</a></li>
-              <li className="flex items-center gap-3"><Phone className="h-4 w-4 text-primary" /><a href={`tel:${SITE_CONTACT.PHONE}`} className="hover:text-foreground">{SITE_CONTACT.PHONE_DISPLAY}</a></li>
-              <li className="flex items-center gap-3"><MessageCircle className="h-4 w-4 text-primary" /><a href={`https://wa.me/${SITE_CONTACT.WHATSAPP}`} target="_blank" rel="noopener noreferrer" className="hover:text-foreground">WhatsApp Chat</a></li>
+            <h2 className="text-lg font-semibold text-foreground">Our Studios</h2>
+            <div className="mt-4">
+              <h3 className="text-sm font-semibold text-foreground">Pimple Nilakh (Main Studio)</h3>
+              <ul className="mt-3 space-y-3 text-sm text-muted-foreground">
+                <li className="flex items-start gap-3"><MapPin className="mt-0.5 h-4 w-4 text-primary" /><a href="https://maps.app.goo.gl/6mVkbhkc9XyR3HUS6?g_st=ac" target="_blank" rel="noopener noreferrer" className="hover:text-foreground">{SITE_CONTACT.ADDRESS}</a></li>
+                <li className="flex items-center gap-3"><Phone className="h-4 w-4 text-primary" /><a href={`tel:${SITE_CONTACT.PHONE}`} className="hover:text-foreground">{SITE_CONTACT.PHONE_DISPLAY}</a></li>
+              </ul>
+            </div>
+            <div className="mt-5 border-t border-border/60 pt-4">
+              <h3 className="text-sm font-semibold text-foreground">Ravet (New Branch)</h3>
+              <ul className="mt-3 space-y-3 text-sm text-muted-foreground">
+                <li className="flex items-start gap-3"><MapPin className="mt-0.5 h-4 w-4 text-primary" /><a href={RAVET_MAPS_URL} target="_blank" rel="noopener noreferrer" className="hover:text-foreground">{RAVET_ADDRESS}</a></li>
+                <li className="flex items-center gap-3"><MessageCircle className="h-4 w-4 text-primary" /><a href={`https://wa.me/${SITE_CONTACT.WHATSAPP}`} target="_blank" rel="noopener noreferrer" className="hover:text-foreground">WhatsApp Chat</a></li>
+              </ul>
+            </div>
+            <ul className="mt-5 space-y-3 border-t border-border/60 pt-4 text-sm text-muted-foreground">
               <li className="flex items-center gap-3"><Mail className="h-4 w-4 text-primary" /><a href={`mailto:${SITE_CONTACT.EMAIL}`} className="hover:text-foreground">{SITE_CONTACT.EMAIL}</a></li>
               <li className="flex items-center gap-3"><Clock className="h-4 w-4 text-primary" />Mon–Sun · 9:00 AM – 9:00 PM</li>
             </ul>

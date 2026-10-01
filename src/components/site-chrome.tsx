@@ -2,13 +2,13 @@ import { Link } from "@tanstack/react-router";
 import { Phone, MessageCircle, MapPin, Mail, Clock, Menu, X } from "lucide-react";
 import { useState } from "react";
 import { cn } from "@/lib/utils";
+import { RAVET_ADDRESS, RAVET_MAPS_URL } from "./splash-intro";
 
 const PHONE = "+919960688686";
 const PHONE_DISPLAY = "+91 99606 88686";
 const WHATSAPP = "919960688686";
 const EMAIL = "hairfixservice@gmail.com";
 const ADDRESS = "Shop no 5, Savoarday society, opposite Copa Villa, near Jagtap Dairy Chowk, Madhuban Colony, Jagtap Dairy, Pimple Nilakh, Pimpri-Chinchwad, Maharashtra 411027";
-import { RAVET_ADDRESS, RAVET_MAPS_URL } from "./splash-intro";
 
 const navItems = [
   { to: "/", label: "Home" },

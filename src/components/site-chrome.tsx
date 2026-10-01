@@ -8,6 +8,7 @@ const PHONE_DISPLAY = "+91 99606 88686";
 const WHATSAPP = "919960688686";
 const EMAIL = "hairfixservice@gmail.com";
 const ADDRESS = "Shop no 5, Savoarday society, opposite Copa Villa, near Jagtap Dairy Chowk, Madhuban Colony, Jagtap Dairy, Pimple Nilakh, Pimpri-Chinchwad, Maharashtra 411027";
+import { RAVET_ADDRESS, RAVET_MAPS_URL } from "./splash-intro";
 
 const navItems = [
   { to: "/", label: "Home" },
@@ -162,9 +163,21 @@ export function SiteFooter() {
           </p>
           <div className="mt-4 flex items-start gap-2 text-sm text-muted-foreground">
             <MapPin className="mt-0.5 h-4 w-4 shrink-0 text-primary" />
-            <a href="https://maps.app.goo.gl/6mVkbhkc9XyR3HUS6?g_st=ac" target="_blank" rel="noopener noreferrer" className="hover:text-foreground">
-              {ADDRESS}
-            </a>
+            <span>
+              <span className="block font-medium text-foreground">Pimple Nilakh (Main Studio)</span>
+              <a href="https://maps.app.goo.gl/6mVkbhkc9XyR3HUS6?g_st=ac" target="_blank" rel="noopener noreferrer" className="hover:text-foreground">
+                {ADDRESS}
+              </a>
+            </span>
+          </div>
+          <div className="mt-3 flex items-start gap-2 text-sm text-muted-foreground">
+            <MapPin className="mt-0.5 h-4 w-4 shrink-0 text-primary" />
+            <span>
+              <span className="block font-medium text-foreground">Ravet (New Branch)</span>
+              <a href="https://www.google.com/maps/search/?api=1&query=One+Mall+Shop+no+104+Aundh+Ravet+BRTS+Rd+Ravet+PCMC+Pimpri+Chinchwad+Maharashtra+412101" target="_blank" rel="noopener noreferrer" className="hover:text-foreground">
+                {RAVET_ADDRESS}
+              </a>
+            </span>
           </div>
         </div>
         <div>

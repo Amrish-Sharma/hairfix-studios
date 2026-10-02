@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 import invitationAsset from "../assets/hairfix-ravet-invitation.jpg.asset.json";
 
 export const RAVET_ADDRESS = "One Mall, Shop no. 104, Aundh - Ravet BRTS Rd, Ravet, PCMC, Pimpri Chinchwad, Maharashtra 412101";
-export const RAVET_MAPS_URL = "https://www.google.com/maps/place/One+Mall,+311,+Aundh+-+Ravet+BRTS+Rd,+Ravet,+PCMC,+Pimpri-Chinchwad,+Maharashtra+412110/@18.6515965,73.7328968,16z/data=!4m6!3m5!1s0x3bc2ba05cd8ae971:0x6e05579bb22fad8d!8m2!3d18.6512413!4d73.7386904!16s%2Fg%2F11n46kjhjv";
+export const RAVET_MAPS_URL = "https://maps.app.goo.gl/Esd13cPtzdJ3TPoz8?g_st=aw";
 
 const SESSION_KEY = "hairfix-ravet-splash-shown";
 
@@ -14,10 +14,21 @@ export function SplashIntro() {
   useEffect(() => {
     if (typeof window === "undefined") return;
     if (window.sessionStorage.getItem(SESSION_KEY)) return;
-    window.sessionStorage.setItem(SESSION_KEY, "1");
-    setVisible(true);
-    const timer = window.setTimeout(() => setVisible(false), 5000);
-    return () => window.clearTimeout(timer);
+
+    const invitation = new Image();
+    let timer: number | undefined;
+
+    invitation.onload = () => {
+      window.sessionStorage.setItem(SESSION_KEY, "1");
+      setVisible(true);
+      timer = window.setTimeout(() => setVisible(false), 5000);
+    };
+    invitation.src = invitationAsset.url;
+
+    return () => {
+      invitation.onload = null;
+      if (timer !== undefined) window.clearTimeout(timer);
+    };
   }, []);
 
   if (!visible) return null;

@@ -6,20 +6,16 @@ import invitationAsset from "../assets/hairfix-ravet-invitation.jpg.asset.json";
 export const RAVET_ADDRESS = "One Mall, Shop no. 104, Aundh - Ravet BRTS Rd, Ravet, PCMC, Pimpri Chinchwad, Maharashtra 412101";
 export const RAVET_MAPS_URL = "https://maps.app.goo.gl/Esd13cPtzdJ3TPoz8?g_st=aw";
 
-const SESSION_KEY = "hairfix-ravet-splash-shown";
-
 export function SplashIntro() {
   const [visible, setVisible] = useState(false);
 
   useEffect(() => {
     if (typeof window === "undefined") return;
-    if (window.sessionStorage.getItem(SESSION_KEY)) return;
 
     const invitation = new Image();
     let timer: number | undefined;
 
     invitation.onload = () => {
-      window.sessionStorage.setItem(SESSION_KEY, "1");
       setVisible(true);
       timer = window.setTimeout(() => setVisible(false), 5000);
     };

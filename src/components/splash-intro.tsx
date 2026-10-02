@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { MapPin, X } from "lucide-react";
+import { Button } from "@/components/ui/button";
 import invitationAsset from "../assets/hairfix-ravet-invitation.jpg.asset.json";
 
 export const RAVET_ADDRESS = "One Mall, Shop no. 104, Aundh - Ravet BRTS Rd, Ravet, PCMC, Pimpri Chinchwad, Maharashtra 412101";
@@ -23,25 +24,28 @@ export function SplashIntro() {
 
   return (
     <div className="fixed inset-0 z-[100] flex items-center justify-center bg-foreground/80 p-4 backdrop-blur-sm">
-      <button
+      <Button
         type="button"
+        size="icon"
         onClick={() => setVisible(false)}
         aria-label="Close invitation"
-        className="absolute right-4 top-4 rounded-full bg-primary p-2 text-primary-foreground shadow-lg transition-colors hover:bg-primary/90"
+        className="absolute right-4 top-4 z-10 rounded-full shadow-lg"
       >
         <X className="h-5 w-5" />
-      </button>
+      </Button>
       <a
         href={RAVET_MAPS_URL}
         target="_blank"
         rel="noopener noreferrer"
-        className="group block max-h-full overflow-hidden rounded-2xl shadow-2xl"
+        className="group flex max-h-[calc(100dvh-2rem)] max-w-[calc(100vw-2rem)] flex-col overflow-hidden rounded-lg shadow-2xl"
       >
-        <img
-          src={invitationAsset.url}
-          alt="HairFix Studio — Grand opening of our new Ravet branch on 11 October 2026. Tap for location."
-          className="max-h-[85vh] w-auto max-w-full object-contain"
-        />
+        <span className="min-h-0 flex-1 bg-background">
+          <img
+            src={invitationAsset.url}
+            alt="HairFix Studio — Grand opening of our new Ravet branch on 11 October 2026. Tap for location."
+            className="h-full max-h-[calc(100dvh-5rem)] w-auto max-w-full object-contain"
+          />
+        </span>
         <span className="flex items-center justify-center gap-2 bg-primary py-2 text-sm font-medium text-primary-foreground">
           <MapPin className="h-4 w-4" />
           New Ravet Branch — Tap for Location

@@ -12,6 +12,7 @@ import {
   ChevronRight,
 } from "lucide-react";
 import { SITE_CONTACT } from "../components/site-chrome";
+import { HeroCarousel } from "../components/hero-carousel";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -54,56 +55,7 @@ const testimonials = [
 function HomePage() {
   return (
     <div>
-      {/* Hero */}
-      <section className="relative overflow-hidden">
-        <div className="absolute inset-0">
-          <img src="/images/hero-studio.jpg" alt="HairFix Studios interior in Pune" className="h-full w-full object-cover" />
-          <div className="absolute inset-0 bg-gradient-to-r from-background via-background/95 to-background/60" />
-        </div>
-        <div className="relative mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8 lg:py-28">
-          <div className="max-w-2xl rounded-2xl bg-background/70 p-6 backdrop-blur-sm sm:p-8">
-            <span className="inline-flex items-center gap-2 rounded-full bg-accent px-3 py-1 text-xs font-medium text-accent-foreground">
-              <Sparkles className="h-3.5 w-3.5" /> Pune's Trusted Hair Replacement Studio
-            </span>
-            <h1 className="mt-4 text-4xl font-bold tracking-tight text-foreground [text-shadow:0_1px_2px_rgba(247,244,238,0.8)] sm:text-5xl lg:text-6xl">
-              Get Your Confidence Back with Natural-Looking Hair Solutions
-            </h1>
-            <p className="mt-5 text-lg text-muted-foreground">
-              Professional Hair Patch, Wig Fixing & Non-Surgical Hair Replacement Solutions in Pune.
-              Customized for your hairline, lifestyle, and budget.
-            </p>
-            <div className="mt-7 flex flex-wrap gap-3">
-              <Link
-                to="/contact"
-                className="inline-flex items-center gap-2 rounded-full bg-primary px-5 py-3 text-sm font-medium text-primary-foreground shadow-sm transition-colors hover:bg-primary/90"
-              >
-                Book Free Consultation <ChevronRight className="h-4 w-4" />
-              </Link>
-              <a
-                href={`https://wa.me/${SITE_CONTACT.WHATSAPP}`}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 rounded-full border border-border bg-background px-5 py-3 text-sm font-medium text-foreground transition-colors hover:bg-accent/20"
-              >
-                <MessageCircle className="h-4 w-4" /> WhatsApp Now
-              </a>
-              <a
-                href={`tel:${SITE_CONTACT.PHONE}`}
-                className="inline-flex items-center gap-2 rounded-full border border-border bg-background px-5 py-3 text-sm font-medium text-foreground transition-colors hover:bg-accent/20"
-              >
-                <Phone className="h-4 w-4" /> Call Us
-              </a>
-            </div>
-            <ul className="mt-8 flex flex-wrap gap-x-5 gap-y-2">
-              {highlights.map((h) => (
-                <li key={h} className="flex items-center gap-2 text-sm text-foreground">
-                  <CheckCircle2 className="h-4 w-4 text-primary" /> {h}
-                </li>
-              ))}
-            </ul>
-          </div>
-        </div>
-      </section>
+      <HeroCarousel />
 
       {/* Why us */}
       <section className="border-t border-border/40 bg-secondary/30">
